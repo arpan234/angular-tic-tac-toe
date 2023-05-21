@@ -1,0 +1,23 @@
+<div class="game">
+  <h1>Tic Tac Toe</h1>
+  <div class="row">
+      <button class="cell" (click)="makeMove(0,0)">{{board[0][0]}}</button>
+      <button class="cell" (click)="makeMove(0,1)">{{board[0][1]}}</button>
+      <button class="cell" (click)="makeMove(0,2)">{{board[0][2]}}</button>
+  </div>
+  <div class="row">
+    <button class="cell" (click)="makeMove(1,0)">{{board[1][0]}}</button>
+    <button class="cell" (click)="makeMove(1,1)">{{board[1][1]}}</button>
+    <button class="cell" (click)="makeMove(1,2)">{{board[1][2]}}</button>
+  </div>
+  <div class="row">
+    <button class="cell" (click)="makeMove(2,0)">{{board[2][0]}}</button>
+    <button class="cell" (click)="makeMove(2,1)">{{board[2][1]}}</button>
+    <button class="cell" (click)="makeMove(2,2)">{{board[2][2]}}</button>
+  </div>
+</div>
+<div class="player">
+  <h3>Next Player: {{currentPlayer}}</h3>
+  <h2 *ngIf="this.winner">Winner is: {{this.winner}}</h2>
+  <button class="reset" (click)="resetGame()">Reset</button>
+</div>
