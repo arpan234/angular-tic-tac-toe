@@ -90,6 +90,6 @@ export class GameComponent implements OnInit {
       ['', '', ''],
       ['', '', ''],
     ];
-    this.currentPlayer = 'Arpan';
+    this.currentPlayer = 'X';
   }
 }
